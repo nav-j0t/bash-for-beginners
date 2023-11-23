@@ -2,17 +2,19 @@
 
 # A script that will ask for a number and print out a message depending on the value. 
 
-read -p "Enter a number: " n
+read -p "Enter a value: " n
 case $n in
-    ???) 
-        echo "One";;
-    2) 
-        echo "Two";;
-    aa) 
-        echo "Three";;
-    *.txt) 
+    1|2) 
+        echo "One or two";;
+    [3-9]) 
+        echo "number from 3 to 9";;
+    ??) 
+        echo "tho charactors";;
+    4) 
         echo "Four";;
-    *) 
-        echo "Other";;
+    *.txt) 
+        echo "ends in .txt";;
+    *)
+        echo "OTHER";;
 esac
     

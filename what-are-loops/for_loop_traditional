@@ -2,7 +2,7 @@
 
 # Print values in an array using for loops
 
-services=("loadbalancer" "virtualmachine" "storage")
+services=("loadbalancer" "vlan" "server" "virtualmachine" "storage")
 
 for i in "${services[@]}"
 do
